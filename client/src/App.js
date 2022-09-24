@@ -9,6 +9,7 @@ import Dashboard from "./Dashboard";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import ProtectedRoute from './utils/ProtectedRoutes';
+import Wanted from './components/Wanted';
 function App() {
 
  
@@ -20,6 +21,8 @@ function App() {
             <Routes>
             <Route path="/register" element={<Register/>}/>
             <Route path='login' element={<Login setUser={setUser}></Login>} />
+            <Route path='Wanted'  element = {<Wanted/>} />
+
           <Route
             path='dashboard'
             element={
